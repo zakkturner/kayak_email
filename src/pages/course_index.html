@@ -1,0 +1,57 @@
+---
+layout: promotional
+subject: 40% off on Labor Day
+percentage: 40
+---
+
+<container>
+    <row class="collapse header">
+        <columns small="12" large="12"><h1 class="text-center">{{laborDay.title}}</h1></columns>
+      </row>
+  <row >
+      <row class="collapse menu">
+        <columns></columns>
+        <columns small="8" large="8">
+          <center>
+          <a href="#">link</a>
+          <a href="#">link</a>
+          <a href="#">link</a>
+          <a href="#">link</a>
+        </center>
+        </columns>
+        <columns></columns>
+        </row>
+    <row >
+    <columns small="12" large="12"></columns>
+  </row>
+  {{#each laborDay.products}}
+  <row class="collapse">
+      <columns small="6" large="6" valign="middle"><h2 class="text-center">{{this.title}}</h2></columns>
+      
+      <columns small="6" large="6">
+        <center>
+          <img src="{{this.image_url}}" alt="goku">
+      </center>
+    </columns>
+    
+    </row>
+  
+  {{/each}}
+  
+  <spacer size="100"></spacer>
+  <row>
+    <columns small="6" large="4" class="small-offset-6">
+      <h4>Shop for {{percentage}}% off</h4>
+      <spacer size="40px"></spacer>
+      {{#bold}}
+      My bold text
+      {{/bold}}
+      {{#mainbutton}}
+      Homepage
+      {{/mainbutton}}
+      <h4>Img</h4>
+    </columns>
+
+  </row>
+  </container>
+  
